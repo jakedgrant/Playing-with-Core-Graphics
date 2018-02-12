@@ -12,6 +12,8 @@
 		23C3906720313B9B003ACD3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C3906520313B9B003ACD3F /* Main.storyboard */; };
 		23C3906920313B9B003ACD3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C3906820313B9B003ACD3F /* Assets.xcassets */; };
 		23C3906C20313B9B003ACD3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C3906A20313B9B003ACD3F /* LaunchScreen.storyboard */; };
+		23C3907520313C0A003ACD3F /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C3907320313C0A003ACD3F /* mouse.png */; };
+		23C3907620313C0A003ACD3F /* mouse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C3907420313C0A003ACD3F /* mouse@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		23C3906820313B9B003ACD3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C3906B20313B9B003ACD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C3906D20313B9B003ACD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C3907320313C0A003ACD3F /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
+		23C3907420313C0A003ACD3F /* mouse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mouse@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				23C3906320313B9B003ACD3F /* ViewController.swift */,
 				23C3906520313B9B003ACD3F /* Main.storyboard */,
 				23C3906820313B9B003ACD3F /* Assets.xcassets */,
+				23C3907320313C0A003ACD3F /* mouse.png */,
+				23C3907420313C0A003ACD3F /* mouse@2x.png */,
 				23C3906A20313B9B003ACD3F /* LaunchScreen.storyboard */,
 				23C3906D20313B9B003ACD3F /* Info.plist */,
 			);
@@ -123,7 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C3907620313C0A003ACD3F /* mouse@2x.png in Resources */,
 				23C3906C20313B9B003ACD3F /* LaunchScreen.storyboard in Resources */,
+				23C3907520313C0A003ACD3F /* mouse.png in Resources */,
 				23C3906920313B9B003ACD3F /* Assets.xcassets in Resources */,
 				23C3906720313B9B003ACD3F /* Main.storyboard in Resources */,
 			);
@@ -281,7 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = waffledog.Project27;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = waffledog.Project27;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
