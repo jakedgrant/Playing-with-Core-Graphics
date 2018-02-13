@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        drawRectangle()
+        drawRainbow()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func redrawTapped(_ sender: Any) {
         currentDrawType += 1
         
-        if currentDrawType > 5 {
+        if currentDrawType > 6 {
             currentDrawType = 0
         }
         
@@ -50,6 +50,9 @@ class ViewController: UIViewController {
             
         case 5:
             drawImagesAndText()
+            
+        case 6:
+            drawRainbow()
             
         default:
             break
@@ -85,6 +88,30 @@ class ViewController: UIViewController {
             
             ctx.cgContext.addEllipse(in: rectangle)
             ctx.cgContext.drawPath(using: .fillStroke)
+        }
+        
+        imageView.image = img
+    }
+    
+    func drawRainbow() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let rainbowColors: [UIColor] = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.purple, UIColor.white]
+        
+        
+        
+        let img = renderer.image { ctx in
+            ctx.cgContext.translateBy(x: 0, y: 256)
+            var rectangle = CGRect(x: 0, y: 0, width: 256, height: 256)
+            
+            for color in rainbowColors {
+                ctx.cgContext.setFillColor(color.cgColor)
+                
+                rectangle.insetBy(dx: 20, dy: 20)
+
+                ctx.cgContext.addEllipse(in: rectangle)
+                ctx.cgContext.drawPath(using: .fill)
+            }
         }
         
         imageView.image = img
@@ -185,7 +212,7 @@ class ViewController: UIViewController {
         imageView.image = img
     }
     
-    
+
     
     
     
